@@ -13,7 +13,7 @@ conda create -n madb python=3.11 -y
 conda activate madb  
 pip install torch==2.7.0 torchvision==0.22.0 torchaudio==2.7.0 --index-url https://download.pytorch.org/whl/cu118  
 pip install -r requirements.txt  
-sudo apt install ffmpeg  
+conda install -c conda-forge ffmpeg  #sudo apt install ffmpeg  
 
 
 ## Quick start with muq evaluation:
