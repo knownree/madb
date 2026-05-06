@@ -1,0 +1,58 @@
+{
+  "CSV_PATH": "/mnt/bn/musicevalbigai/wav44100/dataset_raw/MADB_mean/song_avg_scores.csv",
+  "EMB_DIR": "/mnt/bn/musicevalbigai/extractor/muq/output/musiceval/",
+  "SAVE_DIR": "modelweight/muq/",
+  "SHARED_INIT_PT": "",
+  "TARGET_COLUMNS": [
+    "avg_overall_score",
+    "avg_melody_perception",
+    "avg_melody_emotion",
+    "avg_rhythm_perception",
+    "avg_structure_perception",
+    "avg_performance_and_singing_mood",
+    "avg_performance_skill",
+    "avg_arrangement_perception",
+    "avg_arrangement_emotion",
+    "avg_enunciation_and_singing_skill",
+    "avg_sound_effect_perception"
+  ],
+  "ID_COL": "id",
+  "DEVICE": "cuda",
+  "SEED": 42,
+  "BATCH_SIZE": 64,
+  "NUM_WORKERS": 2,
+  "EPOCHS": 200,
+  "LR": 0.0001,
+  "WEIGHT_DECAY": 0.0,
+  "VALID_RATIO": 0.2,
+  "USE_AMP": false,
+  "MODEL_KWARGS": {
+    "input_dim": 1024,
+    "hidden_dims": 256,
+    "mlp_hidden_dims": [
+      256,
+      64
+    ],
+    "seq_len": 8,
+    "nhead": 8,
+    "num_layers": 2,
+    "dim_feedforward": 256,
+    "dropout": 0.1,
+    "out_dim": 1
+  },
+  "loss": {
+    "use_mask": false,
+    "use_pearson_loss": true,
+    "pearson_loss_weight": 0.5,
+    "train_formula": "mse + pearson_weight * (1 - pearson)"
+  },
+  "selection_metric": {
+    "type": "per_dimension_best_only",
+    "composite_formula": {
+      "mse": 1.0,
+      "1_minus_pearson": 0.33,
+      "1_minus_spearman": 0.33,
+      "1_minus_kendall": 0.33
+    }
+  }
+}
