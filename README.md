@@ -18,7 +18,8 @@ conda install -c conda-forge ffmpeg  #sudo apt install ffmpeg
 
 
 ## Quick start with muq evaluation:
-put folder 'sample' from our huggingface repo under this repo's directionary.  
+put folder 'sample' from our huggingface dataset under this repo's directionary.  
+put folder 'modelweight' from our huggingface model under this repo's directionary.  
 chmod +x run_muq.bash
 ./run_muq.bash | tee run.log
 
