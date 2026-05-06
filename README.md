@@ -2,8 +2,9 @@
 
 ## Audios, annotations, and model weights
 
-1730 audios from ai, all annotations and model weights are on our huggingface dataset: https://huggingface.co/datasets/sirui1/MADB-Dataset  
+1730 audios and all annotations on our huggingface dataset: https://huggingface.co/datasets/sirui1/MADB-Dataset  
 other 4400 audios from open-source muchin dataset are on https://github.com/CarlWangChina/MuChin  
+model weights are on our huggingface model: https://huggingface.co/sirui1/MADB_model_v1  
 we provide a sample set of 200 audios on huggingface, you can download it first for quick start.  
 we also provide the embeddings extracted by clap, muq, clap_com_tag, and clap_com under sample folder, you can jump to evaluation step 3 with these files.  
 
