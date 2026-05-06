@@ -12,6 +12,9 @@ sudo apt install ffmpeg
 
 Quick start with muq evaluation:
 
+chmod +x run_muq_pipeline.sh
+./run_muq.sh | tee run.log
+
 bash run.bash
 
 Run Evaluation:
