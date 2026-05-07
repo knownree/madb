@@ -444,7 +444,6 @@ class ClapTagDataset(Dataset):
             })
 
         print(f"[Dataset] total valid samples: {len(self.items)}")
-        print(f"[Dataset] missing audio:      {missing_audio}")
         print(f"[Dataset] empty comments:     {empty_comment}")
 
     def __len__(self):
