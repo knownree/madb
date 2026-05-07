@@ -1,6 +1,6 @@
 {
   "CSV_PATH": "data/annotation/song_avg_scores.csv",
-  "EMB_DIR": "muq/emb/",
+  "EMB_DIR": "clap/emb_com_tag/",
   "SAVE_DIR": "MADB_model_v1/clap_com_tag/",
   "SHARED_INIT_PT": "",
   "TARGET_COLUMNS": [
