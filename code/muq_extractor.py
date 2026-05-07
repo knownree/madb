@@ -24,7 +24,7 @@ def collect_audio_files(input_dir, exts=("wav",)):
     files = []
     for ext in exts:
         files.extend(input_dir.rglob(f"*.{ext}"))
-        files.extend(input_dir.rglob(f"*.{ext.upper()}"))
+       
 
     return sorted(files)
 
@@ -170,12 +170,12 @@ def main():
             num_fail += 1
             append_line(failed_log, f"[ERROR]\t{audio_path}\t{repr(e)}")
 
-    print("\n========== 提取完成 ==========")
-    print(f"成功提取: {num_ok}")
-    print(f"跳过已有: {num_skip}")
-    print(f"失败数量: {num_fail}")
-    print(f"输出目录: {args.output_dir}")
-    print(f"失败日志: {failed_log}")
+    print("\n========== finish ==========")
+    print(f"SUCCESS: {num_ok}")
+    print(f"SKIP: {num_skip}")
+    print(f"FAILED: {num_fail}")
+    print(f"OUTPUT: {args.output_dir}")
+    print(f"LOG: {failed_log}")
 
 
 if __name__ == "__main__":
