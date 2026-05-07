@@ -3,6 +3,7 @@ numpy==1.26.4
 pandas==3.0.0
 scipy==1.16.3
 scikit-learn==1.7.2
+muq==0.1.0
 
 # Audio loading
 librosa==0.11.0
@@ -10,12 +11,14 @@ soundfile==0.13.1
 audioread==3.1.0
 soxr==1.0.0
 
+
 # HuggingFace / Qwen / CLAP
 transformers==4.39.3
 accelerate==1.13.0
 huggingface-hub==0.36.0
 tokenizers==0.15.2
 safetensors==0.7.0
+peft==0.10.0
 
 # Utils
 tqdm==4.67.1
