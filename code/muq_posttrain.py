@@ -101,7 +101,7 @@ def build_pt_path(sample_id):
             sid = str(int(ff))
     except Exception:
         pass
-    return os.path.join(EMB_DIR, f"{sid}.wav.pt")
+    return os.path.join(EMB_DIR, f"{sid}.pt")
 
 def extract_state_dict(obj):
     if isinstance(obj, dict):
