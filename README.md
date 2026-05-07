@@ -57,9 +57,9 @@ python code/test.py --config code/muq_config.py --output_csv muq/result/test/tes
   - extract clap after pretrained  
   python code/extract_clap.py   \
     --input_dir clap/wav/   \
-    --output_dir clap/clap_com_tag/emb/   \
+    --output_dir clap/emb_com_tag/   \
     --use_infer_clap_ckpt   \
-    --infer_clap_ckpt_path code/modelweight/clap_pretrain/com_tag/best_clap_for_infer.pt
+    --infer_clap_ckpt_path MADB_model_v1/clap_pretrain/com_tag/best_clap_for_infer.pt
 
    ⚠️ Notes:  
 
@@ -78,7 +78,7 @@ python code/test.py --config code/muq_config.py --output_csv muq/result/test/tes
 
 ## Evaluation steps(qwen):
 
-!!!qwen2.5-audio instruct 7B may require different environment, please go to qwen2.5audio page for details  
+!!!qwen2.5-audio instruct 7B require transformers>=4.45.0, which may conflict with other requirements, please use another conda environment for muq.  
 
 python qwen_c.py --avg_csv data/annotation/song_avg_scores.csv   \
   --anno_csv data/annotation/MADB_data.csv   \
