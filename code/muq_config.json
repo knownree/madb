@@ -1,7 +1,7 @@
 {
-  "CSV_PATH": "/mnt/bn/musicevalbigai/wav44100/dataset_raw/MADB_mean/song_avg_scores.csv",
-  "EMB_DIR": "/mnt/bn/musicevalbigai/extractor/muq/output/musiceval/",
-  "SAVE_DIR": "modelweight/muq/",
+  "CSV_PATH": "data/annotation/song_avg_scores.csv",
+  "EMB_DIR": "muq/emb/",
+  "SAVE_DIR": "MADB_model_v1/muq/",
   "SHARED_INIT_PT": "",
   "TARGET_COLUMNS": [
     "avg_overall_score",
