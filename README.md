@@ -5,7 +5,7 @@
 1730 audios and all annotations on our huggingface dataset: https://huggingface.co/datasets/sirui1/MADB-Dataset  
 other 4400 audios from open-source muchin dataset are on https://github.com/CarlWangChina/MuChin  
 model weights are on our huggingface model: https://huggingface.co/sirui1/MADB_model_v1  
-we provide a sample set of 200 audios on huggingface, you can download it first for quick start.  
+we provide a sample set of 200 audios. Full samples include 200 audios and embeddings are on our huggingface dataset.
 we also provide the embeddings extracted by clap, muq, clap_com_tag, and clap_com under sample folder, you can jump to evaluation step 3 with these files.  
 
 ## Prepare Environment(need GPU):
@@ -17,8 +17,7 @@ pip install -r requirements.txt
 conda install -c conda-forge ffmpeg  #sudo apt install ffmpeg  
 
 
-## Quick start with muq evaluation:
-put folder 'sample' from our huggingface dataset under this repo's directionary.  
+## Quick start with muq evaluation: 
 download 'MADB_model_v1" from our huggingface model under this repo's directionary.  
 chmod +x run_muq.bash  
 ./run_muq.bash | tee run.log
