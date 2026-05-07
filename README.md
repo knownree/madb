@@ -115,6 +115,7 @@ python qwen_c.py --avg_csv data/annotation/song_avg_scores.csv   \
     clap_posttrain.py  
     clap_train_single.py  
 
-   
+
+All posttrain codes use song_avg_score.csv, and pretrain codes use MADB_data.csv
 
 
