@@ -24,7 +24,7 @@ def collect_audio_files(input_dir, exts=("wav",)):
     files = []
     for ext in exts:
         files.extend(input_dir.rglob(f"*.{ext}"))
-       
+        
 
     return sorted(files)
 
@@ -171,11 +171,11 @@ def main():
             append_line(failed_log, f"[ERROR]\t{audio_path}\t{repr(e)}")
 
     print("\n========== finish ==========")
-    print(f"SUCCESS: {num_ok}")
-    print(f"SKIP: {num_skip}")
-    print(f"FAILED: {num_fail}")
-    print(f"OUTPUT: {args.output_dir}")
-    print(f"LOG: {failed_log}")
+    print(f"success: {num_ok}")
+    print(f"skip: {num_skip}")
+    print(f"failed: {num_fail}")
+    print(f"output: {args.output_dir}")
+    print(f"log: {failed_log}")
 
 
 if __name__ == "__main__":
