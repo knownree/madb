@@ -16,7 +16,7 @@ python code/muq_extractor.py \
 
 echo "===== Step 3: Run inference ====="
 python code/test.py \
-  --config muq_config.json \
+  --config code/muq_config.json \
   --output_csv muq/result/test/test.csv
 
 echo "===== DONE ====="
