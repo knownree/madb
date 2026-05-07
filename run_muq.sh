@@ -5,7 +5,7 @@ set -o pipefail
 
 echo "===== Step 1: Convert to wav ====="
 python code/to_wav.py \
-  --input_dir sample/dataset_sample/ \
+  --input_dir sample/sample_audio/ \
   --output_dir muq/wav/ \
   --mode muq
 
