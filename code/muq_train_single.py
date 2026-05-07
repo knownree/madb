@@ -135,7 +135,7 @@ def set_seed(seed=42):
     torch.manual_seed(seed)
 
 def build_pt_path(i):
-    return os.path.join(EMB_DIR, f"{int(float(i))}.wav.pt")
+    return os.path.join(EMB_DIR, f"{int(float(i))}.pt")
 
 def load_embedding(p):
     x = torch.load(p, map_location="cpu")
