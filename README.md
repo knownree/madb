@@ -1,5 +1,5 @@
-# madb
-Music Aesthetics Dataset and Benchark
+# madb: Music Aesthetics Dataset and Benchark
+
 
 ## Audios, annotations, and model weights
 
