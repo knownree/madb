@@ -23,13 +23,6 @@ conda install -c conda-forge ffmpeg  #sudo apt install ffmpeg
 ## Quick start with muq evaluation: 
 download 'MADB_model_v1" from our huggingface model under this repo's directionary.  
 
-for linux:   
-
-chmod +x run_muq.bash  
-./run_muq.bash | tee run.log
-
-for windows:  
-
 python code/to_wav.py --input_dir sample/sample_audio/ --output_dir muq/wav/ --mode muq  
 python code/muq_extractor.py --input_dir muq/wav/ --output_dir muq/emb/  
 python code/test.py --config code/muq_config.py --output_csv muq/result/test/test.csv
