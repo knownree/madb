@@ -66,7 +66,7 @@ def main():
     parser.add_argument(
         "--rename_to_id",
         action="store_true",
-        default=True,
+        default=False,
         help="Rename output wav file to id.wav",
     )
 
