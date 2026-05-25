@@ -35,9 +35,11 @@ python code/test.py --config code/muq_config.py --output_csv muq/result/test/tes
   python code/to_wav.py \
    --input_dir sample/dataset_sample/ \
    --output_dir muq/wav/   \
-   --mode muq    
+   --mode muq  \
+   --csv_path data/annotation/song_avg_scores.csv   \
+   --rename_to_id   
 
-2. extract embeddings
+3. extract embeddings
    
   - python code/muq_extractor.py   \
     --input_dir muq/wav/   \
